@@ -16,3 +16,18 @@ jobs:
     steps:
     - name: Hola Mundo
       run: echo "Hola Mundo"
+    - name: touch file
+      run: touch hola.txt
+    - name: Set text
+      run: echo "Buenas tardes" >> hola.txt
+    - name: Read file
+      run: cathola.txt
+
+  other:
+    runs-on: ubuntu-latest
+    needs: [hola]
+    steps:
+    - name: Checkout
+      uses: uses: actions/checkout@v4.2.2
+    - name: LS
+      run: ls -al
