@@ -28,6 +28,6 @@ jobs:
     needs: [hola]
     steps:
     - name: Checkout
-      uses: uses: actions/checkout@v4.2.2
+      uses: actions/checkout@v4.2.2
     - name: LS
       run: ls -al
