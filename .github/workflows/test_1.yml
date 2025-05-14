@@ -21,7 +21,7 @@ jobs:
     - name: Set text
       run: echo "Buenas tardes" >> hola.txt
     - name: Read file
-      run: cathola.txt
+      run: cat hola.txt
 
   other:
     runs-on: ubuntu-latest
